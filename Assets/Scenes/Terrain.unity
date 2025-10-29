@@ -2929,8 +2929,6 @@ SceneRoots:
   - {fileID: 1312606818}
   - {fileID: 406412638}
   - {fileID: 1373284402}
-<<<<<<< Updated upstream
   - {fileID: 1693258486768458963}
-=======
   - {fileID: 2030068832}
->>>>>>> Stashed changes
+  - {fileID: 2030068832}
