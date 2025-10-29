@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 1197764852}
   - component: {fileID: 1197764851}
   - component: {fileID: 1197764850}
+  - component: {fileID: 1197764854}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -1077,6 +1078,23 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_ButtonPressPoint: 0.5
+--- !u!114 &1197764854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197764848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7dbd55b4f129e4ea9b5731673fcd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handMenuPrefab: {fileID: 1347285179708031413, guid: 1cdcd722e5dc38144ad315578cf54e20, type: 3}
+  localOffset: {x: 0, y: 0.08, z: 0.12}
+  localEuler: {x: 0, y: 0, z: 0}
+  faceCamera: 1
+  openMenuAction: {fileID: 8219429425236770423, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1312606815
 GameObject:
   m_ObjectHideFlags: 0
