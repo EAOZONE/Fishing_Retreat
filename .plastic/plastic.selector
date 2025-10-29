@@ -1,4 +1,0 @@
-repository "Fishing Retreat/Fishing Retreat@2474241603242@cloud"
-  path "/"
-    br "/main"
-    co "/main"
