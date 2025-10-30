@@ -163,6 +163,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.FishingRetreat
     Standalone: com.DefaultCompany.Fishing-Retreat
   buildNumber:
     Standalone: 0
@@ -854,7 +855,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 2eaa1097-5e3e-414b-90ce-971e0ed10823
   framebufferDepthMemorylessMode: 0
