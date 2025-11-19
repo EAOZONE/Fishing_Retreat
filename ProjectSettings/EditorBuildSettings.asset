@@ -5,12 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+<<<<<<< HEAD
+  - enabled: 0
+=======
   - enabled: 1
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     path: Assets/Scenes/Terrain.unity
     guid: 4fab41531e2e9bb418ff3866e767e57a
   - enabled: 1
     path: Assets/Scenes/Kayaking v2.unity
     guid: 716f3590255f07046bc8138c2c7cb2d9
   m_configObjects:
+<<<<<<< HEAD
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 3df469295ae971d48b0d27b42e9eecae, type: 2}
+=======
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 856d17b60ada9e946ba7e8ec53181fd4, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 69daf254817d3e04687826d5d1b4678e, type: 2}

@@ -1,5 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+=======
 --- !u!114 &-8370329120633244658
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -13,6 +15,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 7
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
 --- !u!21 &2100000
 Material:
   serializedVersion: 8

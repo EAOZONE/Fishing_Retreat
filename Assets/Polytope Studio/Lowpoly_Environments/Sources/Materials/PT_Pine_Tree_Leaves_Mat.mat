@@ -2,13 +2,21 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
+<<<<<<< HEAD
+  serializedVersion: 6
+=======
   serializedVersion: 8
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PT_Pine_Tree_Leaves_Mat
   m_Shader: {fileID: 4800000, guid: 77e1a76a38ecd5a46a270afb12894dd5, type: 3}
+<<<<<<< HEAD
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _CUSTOMCOLORSTINTING_ON _CUSTOMWIND1_ON
+    _CUSTOMWIND_ON _TRANSLUCENCYONOFF_ON
+=======
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
@@ -18,13 +26,17 @@ Material:
   - _ALPHAPREMULTIPLY_ON
   - _CUSTOMCOLORSTINTING_ON
   - _CUSTOMWIND1_ON
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+<<<<<<< HEAD
+=======
   m_LockedProperties: 
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -72,6 +84,9 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD
+    m_Floats:
+=======
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -87,6 +102,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.5
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     - _BumpScale: 1
     - _CUSTOMCOLORSTINTING: 1
     - _CUSTOMWIND: 1
@@ -94,7 +110,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 10
+<<<<<<< HEAD
+=======
     - _EnvironmentReflections: 1
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     - _Float5: 0.08
     - _GlossMapScale: 1
     - _Glossiness: 0
@@ -107,9 +126,12 @@ Material:
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+<<<<<<< HEAD
+=======
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     - _SNOWONOFF: 0
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
@@ -121,11 +143,17 @@ Material:
     - _TRANSLUCENCYONOFF: 1
     - _TransAmbient: 0.7
     - _TransDirect: 1
+<<<<<<< HEAD
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.5
+=======
     - _TransNormal: 0.5
     - _TransNormalDistortion: 0.1
     - _TransScattering: 2
     - _TransShadow: 0.5
     - _TransStrength: 1
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     - _Translucency: 7.8
     - _UVSec: 0
     - _WINDMASKONOFF: 0

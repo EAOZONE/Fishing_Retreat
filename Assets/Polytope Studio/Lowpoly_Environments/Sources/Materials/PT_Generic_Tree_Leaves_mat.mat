@@ -9,13 +9,23 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PT_Generic_Tree_Leaves_mat
   m_Shader: {fileID: 4800000, guid: 77e1a76a38ecd5a46a270afb12894dd5, type: 3}
+<<<<<<< HEAD
+  m_Parent: {fileID: 2100000, guid: aac20e0005fef5248bc0774a19a05e87, type: 2}
+  m_ModifiedSerializedProperties: 4
+=======
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_ValidKeywords:
   - _CUSTOMWIND_ON
   - _TRANSLUCENCYONOFF_ON
   m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
+<<<<<<< HEAD
+  - _METALLICON_ON
+  - _SMOOTHNESSON_ON
+=======
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -26,6 +36,13 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+<<<<<<< HEAD
+    - _Exteriorwallstexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Interiorwallstexture:
+=======
     - _BaseTexture:
         m_Texture: {fileID: 2800000, guid: 55a083d549e055045948e2083099df16, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -79,11 +96,33 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_ShadowMasks:
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+<<<<<<< HEAD
+    - _Ceramic1smoothness: 0.3
+    - _Ceramic2smoothness: 0.3
+    - _Exteriorwallstiling: 0
+    - _Gradient: 0.167
+    - _Interiorwallstiling: 0
+    - _Metal1metallic: 0.65
+    m_Colors:
+    - _Ceramictiles1color: {r: 0.3207547, g: 0.04869195, b: 0.01059096, a: 1}
+    - _Ceramictiles2color: {r: 0.7924528, g: 0.3776169, b: 0.1682093, a: 1}
+    - _Ceramictiles3color: {r: 0.4677838, g: 0.3813261, b: 0.2501584, a: 1}
+    - _Exteriorwalls1colour: {r: 0.6792453, g: 0.6010633, b: 0.5863296, a: 1}
+    - _Exteriorwalls2color: {r: 0.3524386, g: 0.6133218, b: 0.754717, a: 1}
+    - _Exteriorwalls3color: {r: 0.8867924, g: 0.6561894, b: 0.23843, a: 1}
+    - _Interiorwallscolor: {r: 0.4127358, g: 0.490063, b: 0.5, a: 0}
+    - _Metal2color: {r: 2, g: 0.5960785, b: 0, a: 0}
+    - _Rock1color: {r: 0.4127358, g: 0.490063, b: 0.5, a: 0}
+    - _Rock2color: {r: 0.3679245, g: 0.2968027, b: 0.1787558, a: 0}
+    - _Wood2color: {r: 0.1981132, g: 0.103908, b: 0.06634924, a: 1}
+    - _Wood3color: {r: 0.5377358, g: 0.4531547, b: 0.377937, a: 1}
+=======
     - _AlphaCutoff: 0.5
     - _BumpScale: 1
     - _CUSTOMCOLORSTINTING: 0
@@ -135,4 +174,5 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 1, g: 0, b: 0, a: 1}
     - _TopColor: {r: 1, g: 0.6415998, b: 0, a: 1}
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_BuildTextureStacks: []

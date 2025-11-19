@@ -65,13 +65,21 @@ public class KayakPaddleMovement : MonoBehaviour
         if(paddleSpeed != 0.0)
         {
             // --- On-screen Debug Info ---
+<<<<<<< HEAD
+ /*           Debug.Log(
+=======
             Debug.Log(
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
                 $"PaddleVel: {paddleVelocity} | PaddleSpeed: {paddleSpeed:F2}\n" +
                 $"StrokePower: {strokePower:F2}\n" +
                 $"AppliedForce: {forwardForce}\n" +
                 $"RBody Vel: {kayakRigidbody.velocity}\n" +
                 $"RBody AngVel: {kayakRigidbody.angularVelocity} (mag={angularSpeed:F2})\n"
+<<<<<<< HEAD
+            );*/
+=======
             );
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
         }
 
 

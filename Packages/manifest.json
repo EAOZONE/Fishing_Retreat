@@ -7,7 +7,13 @@
     "com.unity.timeline": "1.7.7",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.4",
+<<<<<<< HEAD
+    "com.unity.xr.hands": "1.4.3",
     "com.unity.xr.interaction.toolkit": "2.6.5",
+    "com.unity.xr.oculus": "4.5.2",
+=======
+    "com.unity.xr.interaction.toolkit": "2.6.5",
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     "com.unity.xr.openxr": "1.14.3",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

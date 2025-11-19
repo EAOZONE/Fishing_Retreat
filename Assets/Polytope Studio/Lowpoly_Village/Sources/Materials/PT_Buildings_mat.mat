@@ -9,6 +9,11 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PT_Buildings_mat
   m_Shader: {fileID: 4800000, guid: 255b400e6b8ac644588946664da1ff3f, type: 3}
+<<<<<<< HEAD
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+=======
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _GRADIENT_ON
@@ -26,6 +31,10 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+<<<<<<< HEAD
+  m_LockedProperties: 
+=======
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:

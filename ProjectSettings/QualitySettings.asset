@@ -307,6 +307,9 @@ QualitySettings:
     - Standalone
     - Server
   m_TextureMipmapLimitGroupNames: []
+<<<<<<< HEAD
+  m_PerPlatformDefaultQuality: {}
+=======
   m_PerPlatformDefaultQuality:
     Android: 2
     GameCoreScarlett: 5
@@ -324,3 +327,4 @@ QualitySettings:
     XboxOne: 5
     iPhone: 2
     tvOS: 2
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48

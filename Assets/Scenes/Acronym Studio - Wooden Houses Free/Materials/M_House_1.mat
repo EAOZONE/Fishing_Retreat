@@ -29,7 +29,11 @@ Material:
   m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
+<<<<<<< HEAD
+  m_DoubleSidedGI: 0
+=======
   m_DoubleSidedGI: 1
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: Opaque
@@ -103,7 +107,11 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+<<<<<<< HEAD
+    - _Cull: 2
+=======
     - _Cull: 0
+>>>>>>> de70214d65c24c64712e14e52245c1018d2c9f48
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
