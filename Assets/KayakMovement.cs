@@ -100,7 +100,7 @@ public class KayakMovement : MonoBehaviour
             kayakRigidbody.angularVelocity =
                 kayakRigidbody.angularVelocity.normalized * maxAngularSpeed;
         }
- }
+    }
 
     // works based on paddle depth in water
     private void ApplyPaddle(Transform paddle, ref Vector3 lastPos, PaddleWaterDetector detector, bool isLeft, ref Vector3 totalThrust, ref float totalTurn)
@@ -121,7 +121,7 @@ public class KayakMovement : MonoBehaviour
 
         // forward/up strokes do nothing
         if (strokePower <= 0f)
-            return; 
+            return;
 
         // Stroke power from depth in water and paddle velocity
         float depthFactor = detector.depth * depthMultiplier;
@@ -133,7 +133,7 @@ public class KayakMovement : MonoBehaviour
         // Add into the total thrust sum for both paddles
         totalThrust += thrust;
 
-       // Turning/Torque
+        // Turning/Torque
         // Convert paddle world position → kayak-local coordinates
         Vector3 localPos = kayakRigidbody.transform.InverseTransformPoint(paddle.position);
 
@@ -151,39 +151,39 @@ public class KayakMovement : MonoBehaviour
     }
 
     // works only when paddle is in water
-/*    private void HandleSinglePaddle(Transform paddle, ref Vector3 lastPos, bool isLeft, PaddleWaterDetector waterDetector)
-    {
-        if (!waterDetector.IsInWater())
+    /*    private void HandleSinglePaddle(Transform paddle, ref Vector3 lastPos, bool isLeft, PaddleWaterDetector waterDetector)
         {
-            return;
-        }
+            if (!waterDetector.IsInWater())
+            {
+                return;
+            }
 
-        // Paddle velocity
-        Vector3 paddleVel = (paddle.position - lastPos) / Time.fixedDeltaTime;
-        lastPos = paddle.position;
+            // Paddle velocity
+            Vector3 paddleVel = (paddle.position - lastPos) / Time.fixedDeltaTime;
+            lastPos = paddle.position;
 
-        float speed = paddleVel.magnitude;
-        if (speed < minSpeed) return;
+            float speed = paddleVel.magnitude;
+            if (speed < minSpeed) return;
 
-        // Backward stroke
-        float strokePower = Vector3.Dot(paddleVel, -kayakRigidbody.transform.forward);
-        if (strokePower <= 0f) return;
+            // Backward stroke
+            float strokePower = Vector3.Dot(paddleVel, -kayakRigidbody.transform.forward);
+            if (strokePower <= 0f) return;
 
-        // Forward propulsion
-        Vector3 forwardForce = kayakRigidbody.transform.forward * (strokePower * strokeForce);
-        kayakRigidbody.AddForce(forwardForce, ForceMode.Acceleration);
+            // Forward propulsion
+            Vector3 forwardForce = kayakRigidbody.transform.forward * (strokePower * strokeForce);
+            kayakRigidbody.AddForce(forwardForce, ForceMode.Acceleration);
 
-        // Turning torque
-        float torqueDirection = isLeft ? +1f : -1f;
-        float torqueAmount = strokePower * turnForce;
-        kayakRigidbody.AddTorque(Vector3.up * torqueAmount * torqueDirection, ForceMode.Acceleration);
+            // Turning torque
+            float torqueDirection = isLeft ? +1f : -1f;
+            float torqueAmount = strokePower * turnForce;
+            kayakRigidbody.AddTorque(Vector3.up * torqueAmount * torqueDirection, ForceMode.Acceleration);
 
-        // Debug visuals
-        Debug.DrawRay(kayakRigidbody.position, forwardForce.normalized * 3f, Color.red, 0.1f);
-        Debug.DrawRay(paddle.position, paddleVel, isLeft ? Color.cyan : Color.magenta, 0.1f);
-    }*/
+            // Debug visuals
+            Debug.DrawRay(kayakRigidbody.position, forwardForce.normalized * 3f, Color.red, 0.1f);
+            Debug.DrawRay(paddle.position, paddleVel, isLeft ? Color.cyan : Color.magenta, 0.1f);
+        }*/
 
-      // works when paddle is out of air and kayak moves
+    // works when paddle is out of air and kayak moves
     /*    private void HandleSinglePaddle(Transform paddle, ref Vector3 lastPos, bool isLeft)
         {
             // Paddle velocity
@@ -215,6 +215,6 @@ public class KayakMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

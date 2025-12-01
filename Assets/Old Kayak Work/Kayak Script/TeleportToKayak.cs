@@ -11,7 +11,7 @@ public class TeleportToKayak : MonoBehaviour
     public TeleportationProvider teleportationProvider;
     public Transform kayak;                     // Assign the kayak object
     public TeleportationAnchor kayakTeleportAnchor; // Assign the kayak's seat teleport anchor
-    public float heightOffset = 0.0f;           // Adjust seat height offset
+    public float heightOffset = 0.85f;           // Adjust seat height offset
     public InputAction exitKayakAction;
 
     private XROrigin xrOrigin;
@@ -28,7 +28,23 @@ public class TeleportToKayak : MonoBehaviour
         // Cache locomotion providers if present
         moveProvider = xrOrigin.GetComponent<ContinuousMoveProviderBase>();
         turnProvider = xrOrigin.GetComponent<SnapTurnProviderBase>();
+
+        //AutoTeleportAtStart();
+        //OnEnable();
+        // AUTO-SEAT AFTER XR ORIGIN INITIALIZES
+        StartCoroutine(AutoSeatDelayed());
     }
+
+    private IEnumerator AutoSeatDelayed()
+    {
+        // Wait 2–3 frames so XR camera height initializes
+        yield return null;
+        yield return null;
+
+        // Now perform the same seating logic as OnTeleportEnd()
+        AutoTeleportAtStart();
+    }
+
 
     private void OnEnable()
     {
@@ -57,6 +73,32 @@ public class TeleportToKayak : MonoBehaviour
         {
             ExitKayak();
         }
+    }
+
+    private void AutoTeleportAtStart()
+    {
+        if (!xrOrigin || !kayak || seated) return;
+
+        // Align XR Rig height with kayak
+        Vector3 desiredCameraPos = new Vector3(
+                kayak.position.x,
+                kayak.position.y + heightOffset,
+                kayak.position.z
+        );
+
+        xrOrigin.MoveCameraToWorldLocation(desiredCameraPos);
+
+        // Parent XR Rig to kayak
+        xrOrigin.transform.SetParent(kayak, true);
+        seated = true;
+
+        // Disable teleportation + movement while seated
+        if (moveProvider) moveProvider.enabled = false;
+        if (turnProvider) turnProvider.enabled = false;
+        if (teleportationProvider) teleportationProvider.enabled = false;
+        if (kayakTeleportAnchor) kayakTeleportAnchor.enabled = false;
+
+        Debug.Log("Player auto-teleported on kayak at start.");
     }
 
     private void OnTeleportEnd(LocomotionSystem locomotionSystem)
